@@ -1,0 +1,37 @@
+nav.navbar.navbar-fixed-top.navbar-dark.bg-inverse
+  a.navbar-brand(routerLink="/") The Waycross Inn
+  
+  ul.nav.navbar-nav
+    li.nav-item(routerLinkActive="active")
+      a.nav-link(routerLink="/") Home
+      
+    li.nav-item(routerLinkActive="active")
+      a.nav-link(routerLink="/about") About
+
+    div.pull-xs-right
+      // So these things can probably be components. 
+      ul.nav.navbar-nav
+
+        li.nav-item.peasant-resource
+          span 1
+          i.fa.fa-fw.fa-user
+
+        li.nav-item.soldier-resource
+          span 0
+          i.fa.fa-fw.fa-user
+
+        li.nav-item.merchant-resource
+          span 0
+          i.fa.fa-fw.fa-user
+
+        li.nav-item.knight-resource
+          span 0
+          i.fa.fa-fw.fa-user
+
+        li.nav-item.noble-resource
+          span 0
+          i.fa.fa-fw.fa-user
+            
+        li.nav-item.gold-resource
+          span 123
+          i.fa.fa-fw.fa-circle

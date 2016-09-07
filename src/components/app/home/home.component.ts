@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 const template = require('./home.component.pug');
 
 @Component({
-  selector: 'my-home',
+  selector: 'wc-home',
   template: template() 
 })
 export class HomeComponent {

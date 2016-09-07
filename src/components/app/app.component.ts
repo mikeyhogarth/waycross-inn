@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 const template = require('./app.component.pug');
 
 @Component({
-  selector: 'my-app',
+  selector: 'wc-app',
   template: template(),
   styleUrls: ['./app.component.scss']
 })

@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 const template = require('./about.component.pug');
 
 @Component({
-  selector: 'my-about',
+  selector: 'wc-about',
   template: template() 
 })
 export class AboutComponent {
