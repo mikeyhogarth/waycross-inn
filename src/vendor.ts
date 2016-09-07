@@ -11,7 +11,7 @@ import 'rxjs';
 // Other vendors for example jQuery, Lodash or Bootstrap
 // You can import js, ts, css, sass, ...
 
-require('jquery');
-require('tether');
-require('bootstrap');
-require('bootstrap/dist/css/bootstrap.css');
+import 'jquery';
+import 'tether';
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.css';
