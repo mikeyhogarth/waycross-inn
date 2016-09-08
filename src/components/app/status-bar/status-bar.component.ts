@@ -17,5 +17,4 @@ export class StatusBarComponent implements OnInit {
   ngOnInit() { 
     this.gameStateService.getGameState().then(g => this.gameState = g);
   }
-
 }

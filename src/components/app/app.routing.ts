@@ -1,12 +1,12 @@
 import { ModuleWithProviders }  from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './display/home/home.component';
+import { TaproomComponent } from './display/taproom/taproom.component';
 import { AboutComponent } from './display/about/about.component';
 
 export const appRoutes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
-  { path: 'home', component: HomeComponent },
+  { path: '', redirectTo: '/taproom', pathMatch: 'full' },
+  { path: 'taproom', component: TaproomComponent },
   { path: 'about', component: AboutComponent }
 ];
 
