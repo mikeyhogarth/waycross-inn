@@ -6,28 +6,34 @@ nav.navbar.navbar-fixed-top.navbar-dark.bg-inverse.status-bar
     ul.nav.navbar-nav
 
       li.nav-item.peasant-resource
-        span {{gameState?.populace.peasants}}
-        i.fa.fa-fw.fa-user
+        div(tooltipPlacement="bottom", tooltip="Peasants")
+          span {{gameState?.populace.peasants}}
+          i.fa.fa-fw.fa-user
 
       li.nav-item.soldier-resource
-        span {{gameState?.populace.soldiers}}
-        i.fa.fa-fw.fa-user
+        div(tooltipPlacement="bottom", tooltip="Soldiers")
+          span {{gameState?.populace.soldiers}}
+          i.fa.fa-fw.fa-user
 
       li.nav-item.merchant-resource
-        span {{gameState?.populace.merchants}}
-        i.fa.fa-fw.fa-user
+        div(tooltipPlacement="bottom", tooltip="Merchants")
+          span {{gameState?.populace.merchants}}
+          i.fa.fa-fw.fa-user
 
       li.nav-item.knight-resource
-        span {{gameState?.populace.knights}}
-        i.fa.fa-fw.fa-user
+        div(tooltipPlacement="bottom", tooltip="Knights")
+          span {{gameState?.populace.knights}}
+          i.fa.fa-fw.fa-user
 
       li.nav-item.noble-resource
-        span {{gameState?.populace.nobles}}
-        i.fa.fa-fw.fa-user
+        div(tooltipPlacement="bottom", tooltip="Nobles")
+          span {{gameState?.populace.nobles}}
+          i.fa.fa-fw.fa-user
     
       li.nav-item.gold-resource
-        span {{gameState?.gold}}
-        i.fa.fa-fw.fa-circle
+        div(tooltipPlacement="bottom", tooltip="Gold")
+          span {{gameState?.gold}}
+          i.fa.fa-fw.fa-circle
 
       span.navbar-text.navbar-right.date
         | 5th of Winter

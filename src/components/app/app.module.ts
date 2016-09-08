@@ -9,11 +9,14 @@ import { NotificationsComponent } from './notifications/notifications.component'
 import { routing } from './app.routing';
 import { GameStateService } from '../../services/game-state.service';
 
+import { TooltipModule } from 'ng2-bootstrap/ng2-bootstrap';
+
 export const AppModuleConfig = {
   imports: [
     DisplayModule,
     BrowserModule,
     FormsModule,
+    TooltipModule,
     routing
   ],
   declarations: [ 
