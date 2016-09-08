@@ -10,13 +10,12 @@ const template = require('./status-bar.component.pug');
   template: template(),
 })
 export class StatusBarComponent implements OnInit {
-  gold: number;
+  gameState:GameState;
 
   constructor(private gameStateService:GameStateService) { }
 
   ngOnInit() { 
-    this.gameStateService.getGameState().then(g =>
-      this.gold = g.gold
-    );
+    this.gameStateService.getGameState().then(g => this.gameState = g);
   }
+
 }

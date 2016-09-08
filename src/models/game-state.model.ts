@@ -1,8 +1,16 @@
 export class GameState {
     gold: number;
+    populace: Object;
 
     constructor() {
       // Initial Values
-      this.gold = 123;
+      this.gold      = 100;
+      this.populace  = {
+        peasants: 1,
+        merchants: 2,
+        soldiers: 1,
+        knights: 0,
+        nobles: 0
+      }; 
     }
 }
