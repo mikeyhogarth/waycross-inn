@@ -7,5 +7,8 @@ module.exports = {
   resolve: commonConfig.resolve,
   module: {
     loaders: commonConfig.module.loaders
+  },
+  sassLoader: {
+    includePaths: [helpers.root('public', 'stylesheets')]
   }
 }
