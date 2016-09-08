@@ -1,22 +1,21 @@
-.gold-resource i {
-  color: gold;
-}
-.peasant-resource i {
-  color: white;
-}
+@import 'vars/loot.scss';
 
-.soldier-resource i {
-  color: lawngreen;
-}
+.status-bar {
+  .resource-indicators {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-right: 1rem;
+    font-size: 1rem;
+  }
 
-.merchant-resource i {
-  color: dodgerblue;
-}
+  .gold-resource i      { color: $loot-money; }
+  .peasant-resource i   { color: $loot-common; }
+  .soldier-resource i   { color: $loot-uncommon; }
+  .merchant-resource i  { color: $loot-rare; }
+  .knight-resource i    { color: $loot-epic; }
+  .noble-resource i     { color: $loot-legendary; }
 
-.knight-resource i {
-  color: mediumpurple;
-}
-
-.noble-resource i {
-  color: darkorange;
+  .resource-indicators {
+    vertical-align: middle;
+  }
 }

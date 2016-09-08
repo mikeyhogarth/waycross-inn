@@ -1,4 +1,10 @@
 wc-status-bar
 
 .container
-  router-outlet
+  .row
+    .col-sm-9
+      wc-navigation
+      router-outlet
+
+    .col-sm-3
+      wc-notifications

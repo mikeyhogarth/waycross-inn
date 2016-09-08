@@ -77,7 +77,9 @@ module.exports = {
       }
     ]
   },
-
+  sassLoader: {
+    includePaths: [helpers.root('public', 'stylesheets')]
+  },
   plugins: [
     new webpack.optimize.CommonsChunkPlugin({
       name: ['app', 'vendor', 'polyfills']
