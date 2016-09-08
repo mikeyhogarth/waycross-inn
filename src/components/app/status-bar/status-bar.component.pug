@@ -5,35 +5,41 @@ nav.navbar.navbar-fixed-top.navbar-dark.bg-inverse.status-bar
     // So these things can probably be components. 
     ul.nav.navbar-nav
 
-      li.nav-item.peasant-resource
+      li.nav-item
         div(tooltipPlacement="bottom", tooltip="Peasants")
           span {{gameState?.populace.peasants}}
-          i.fa.fa-fw.fa-user
+          i.fa.fa-fw.fa-user.peasant-resource
 
-      li.nav-item.soldier-resource
+      li.nav-item
         div(tooltipPlacement="bottom", tooltip="Soldiers")
           span {{gameState?.populace.soldiers}}
-          i.fa.fa-fw.fa-user
+          i.fa.fa-fw.fa-user.soldier-resource
 
-      li.nav-item.merchant-resource
+      li.nav-item
         div(tooltipPlacement="bottom", tooltip="Merchants")
           span {{gameState?.populace.merchants}}
-          i.fa.fa-fw.fa-user
+          i.fa.fa-fw.fa-user.merchant-resource
 
-      li.nav-item.knight-resource
+      li.nav-item
         div(tooltipPlacement="bottom", tooltip="Knights")
           span {{gameState?.populace.knights}}
-          i.fa.fa-fw.fa-user
+          i.fa.fa-fw.fa-user.knight-resource
 
-      li.nav-item.noble-resource
+      li.nav-item
         div(tooltipPlacement="bottom", tooltip="Nobles")
           span {{gameState?.populace.nobles}}
-          i.fa.fa-fw.fa-user
+          i.fa.fa-fw.fa-user.noble-resource
     
-      li.nav-item.gold-resource
+      li.nav-item
         div(tooltipPlacement="bottom", tooltip="Gold")
           span {{gameState?.gold}}
-          i.fa.fa-fw.fa-circle
+          i.fa.fa-fw.fa-circle.gold-resource
+
+      li.nav-item
+        div(tooltipPlacement="bottom", tooltip="Renown")
+          span {{gameState?.renown}}
+          i.fa.fa-fw.fa-globe.renown-resource
 
       span.navbar-text.navbar-right.date
-        | 5th of Winter
+        | 5th of Summer 
+        i.fa.fa-fw.fa-sun-o

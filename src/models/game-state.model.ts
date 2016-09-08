@@ -5,6 +5,7 @@ export class GameState {
     constructor() {
       // Initial Values
       this.gold      = 100;
+      this.renown    = 0;
       this.populace  = {
         peasants: 1,
         merchants: 2,

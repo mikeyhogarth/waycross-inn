@@ -4,3 +4,11 @@ $loot-uncommon: #1eff00;
 $loot-rare: #0070dd;
 $loot-epic: #a335ee;
 $loot-legendary: #ff8000;
+
+i.gold-resource      { color: $loot-money; }
+i.peasant-resource   { color: $loot-common; }
+i.soldier-resource   { color: $loot-uncommon; }
+i.merchant-resource  { color: $loot-rare; }
+i.knight-resource    { color: $loot-epic; }
+i.noble-resource     { color: $loot-legendary; }
+i.storage-resource   { color: saddlebrown; }

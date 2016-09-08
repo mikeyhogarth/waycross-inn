@@ -8,12 +8,7 @@
     font-size: 1rem;
   }
 
-  .gold-resource i      { color: $loot-money; }
-  .peasant-resource i   { color: $loot-common; }
-  .soldier-resource i   { color: $loot-uncommon; }
-  .merchant-resource i  { color: $loot-rare; }
-  .knight-resource i    { color: $loot-epic; }
-  .noble-resource i     { color: $loot-legendary; }
+
 
   .resource-indicators {
     vertical-align: middle;
