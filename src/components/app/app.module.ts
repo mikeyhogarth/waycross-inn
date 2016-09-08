@@ -7,8 +7,9 @@ import { StatusBarComponent } from './status-bar/status-bar.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { NotificationsComponent } from './notifications/notifications.component';
 import { routing } from './app.routing';
+import { GameStateService } from '../../services/game-state.service';
 
-@NgModule({
+export const AppModuleConfig = {
   imports: [
     DisplayModule,
     BrowserModule,
@@ -21,8 +22,10 @@ import { routing } from './app.routing';
     NavigationComponent,
     NotificationsComponent
   ],
-  providers: [ ],
+  providers: [ GameStateService ],
   bootstrap: [ AppComponent ]
-})
+}
+
+@NgModule(AppModuleConfig)
 export class AppModule {
 }
