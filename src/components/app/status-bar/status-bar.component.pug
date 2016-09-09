@@ -2,43 +2,29 @@ nav.navbar.navbar-fixed-top.navbar-dark.bg-inverse.status-bar
   a.navbar-brand(routerLink="/") The Waycross Inn
   
   div.pull-xs-right.nav-item.resource-indicators
-    // So these things can probably be components. 
+   
     ul.nav.navbar-nav
 
       li.nav-item
-        div(tooltipPlacement="bottom", tooltip="Peasants")
-          span {{gameState?.populace.peasants}}
-          i.fa.fa-fw.fa-user.peasant-resource
+        wc-resource-icon([resourceType]="'peasant'", [value]="gameState?.populace.peasants")
 
       li.nav-item
-        div(tooltipPlacement="bottom", tooltip="Soldiers")
-          span {{gameState?.populace.soldiers}}
-          i.fa.fa-fw.fa-user.soldier-resource
+        wc-resource-icon([resourceType]="'merchant'", [value]="gameState?.populace.merchants")
 
       li.nav-item
-        div(tooltipPlacement="bottom", tooltip="Merchants")
-          span {{gameState?.populace.merchants}}
-          i.fa.fa-fw.fa-user.merchant-resource
+        wc-resource-icon([resourceType]="'soldier'", [value]="gameState?.populace.soldiers")
 
       li.nav-item
-        div(tooltipPlacement="bottom", tooltip="Knights")
-          span {{gameState?.populace.knights}}
-          i.fa.fa-fw.fa-user.knight-resource
+        wc-resource-icon([resourceType]="'knight'", [value]="gameState?.populace.knights")
 
       li.nav-item
-        div(tooltipPlacement="bottom", tooltip="Nobles")
-          span {{gameState?.populace.nobles}}
-          i.fa.fa-fw.fa-user.noble-resource
+        wc-resource-icon([resourceType]="'noble'", [value]="gameState?.populace.nobles")
     
       li.nav-item
-        div(tooltipPlacement="bottom", tooltip="Gold")
-          span {{gameState?.gold}}
-          i.fa.fa-fw.fa-circle.gold-resource
+        wc-resource-icon([resourceType]="'gold'", [value]="gameState?.gold")
 
       li.nav-item
-        div(tooltipPlacement="bottom", tooltip="Renown")
-          span {{gameState?.renown}}
-          i.fa.fa-fw.fa-globe.renown-resource
+        wc-resource-icon([resourceType]="'renown'", [value]="gameState?.renown")
 
       span.navbar-text.navbar-right.date
         | 5th of Summer 
