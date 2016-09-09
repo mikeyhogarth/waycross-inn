@@ -1,5 +1,6 @@
 export class GameState {
     gold: number;
+    renown: number;
     populace: Object;
 
     constructor() {

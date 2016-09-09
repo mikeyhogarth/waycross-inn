@@ -2,4 +2,6 @@
 
 # The Waycross Inn
 
+![Alt text](/public/images/screenshot.png?raw=true "The Waycross Inn")
+
 Under development
