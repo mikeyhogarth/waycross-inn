@@ -16,4 +16,12 @@ describe('ResourceIconComponent', () => {
       expect(fixture.componentInstance instanceof ResourceIconComponent).toBe(true);
     });
   });
+
+  describe('#icon', () => {
+    it('sorts out the icon class for the resource', () => {
+      fixture.componentInstance.resourceType = 'gold';
+      expect(fixture.componentInstance.iconClass())
+        .toEqual('fa fa-fw fa-circle gold-resource');
+    });
+  });
 });
