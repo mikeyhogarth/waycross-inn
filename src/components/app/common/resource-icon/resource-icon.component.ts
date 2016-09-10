@@ -24,6 +24,6 @@ export class ResourceIconComponent {
   @Input() value : number;
 
   iconClass() {
-    return `fa fa-fw fa-${ResourceIcons[this.resourceType]} ${this.resourceType}-resource`;
+    return `${this.resourceType}-resource`;
   }
 }

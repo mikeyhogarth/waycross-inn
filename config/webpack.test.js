@@ -8,7 +8,5 @@ module.exports = {
   module: {
     loaders: commonConfig.module.loaders
   },
-  sassLoader: {
-    includePaths: [helpers.root('public', 'stylesheets')]
-  }
+  sassLoader: commonConfig.sassLoader
 }

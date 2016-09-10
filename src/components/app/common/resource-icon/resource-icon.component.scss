@@ -1,3 +1,7 @@
+@import 'font-awesome/scss/variables';
+@import 'font-awesome/scss/mixins';
+@import 'vars/colours.scss';
+
 .resource-icon {
   border: solid 1px transparent;
   padding: .1rem;
@@ -5,5 +9,22 @@
 
   &:hover {
     border: solid 1px silver;
+  }
+  
+  i {
+    @include fa-icon();
+    // From fixed_width (fa-fw)
+    width: (18em / 14);
+    text-align: center;
+    
+    &.gold-resource { color: $loot-money; &:before { content: $fa-var-circle } };
+    &.peasant-resource { color: $loot-common; &:before { content: $fa-var-user } };
+    &.soldier-resource { color: $loot-uncommon; &:before { content: $fa-var-user } };
+    &.merchant-resource { color: $loot-rare; &:before { content: $fa-var-user } };
+    &.knight-resource { color: $loot-epic; &:before { content: $fa-var-user } };
+    &.noble-resource { color: $loot-legendary; &:before { content: $fa-var-user } };
+    &.storage-resource { color: saddlebrown; &:before { content: $fa-var-cubes } };
+    &.popularity-resource { &:before { content: $fa-var-smile-o } };
+    &.renown-resource { color: #fff; &:before { content: $fa-var-globe } };
   }
 }

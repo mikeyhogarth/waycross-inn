@@ -78,7 +78,10 @@ module.exports = {
     ]
   },
   sassLoader: {
-    includePaths: [helpers.root('public', 'stylesheets')]
+    includePaths: [
+      helpers.root('public', 'stylesheets'),
+      helpers.root('node_modules')
+    ]
   },
   plugins: [
     new webpack.optimize.CommonsChunkPlugin({
